@@ -6,6 +6,8 @@
             initialize: {},
             initializeControls: {},
             initializeControlEvents: {},
+            loadBreadcrumb: {},
+            getParameters: {},
             loadMasterData: {},
             loadData: {}
         },
@@ -34,54 +36,75 @@
                 element: {},
                 validationOptions: {}
             }
+        },
+        dialogs: {
+
         }
     }
 
+    /*
+     * Ham nay se chay dau tien khi document on ready
+     * Luon luon initialize controls truoc roi moi den load data
+     */
     page.defaults.initialize = function () {
         page.defaults.initializeControls();
         page.defaults.initializeControlEvents();
+        page.defaults.getParameters();
 
-        //page.sections.ThongTinBenhNhan.defaults.initialize();
+        page.sections.frm.initialize();
+
+        //Tuy thuoc vao trang co bao nhieu sections thi se goi bay nhieu initialize cua sections do
+        page.sections.ThongTinBenhNhan.defaults.initialize();
 
         page.defaults.loadMasterData();
         page.defaults.loadData();
     }
 
+    /*
+     * Quy dinh nhung controls luc trang vua khoi tao
+     * VD: An/hien nut dua vao status cua benh nhan
+     */
     page.defaults.initializeControls = function () {
-        var $ngaysinh = $("#NgaySinh"),
-            $thangsinh = $("#ThangSinh"),
-            $namsinh = $("#NamSinh");
+        page.defaults.initialize.loadBreadcrumb();
 
-        page.sections.ThongTinBenhNhan.element = $(".thong-tin-benh-nhan");
-
-        for (var i = 1; i < 32; i++) {
-            $ngaysinh.append(new Option(i, i));
-        }
-
-        for (var i = 1; i < 13; i++) {
-            $thangsinh.append(new Option(i, i));
-        }
-
-        for (var i = 2017; i > 1919; i--) {
-            $namsinh.append(new Option(i, i));
-        }
-
-        loadBreadcrumb();
         $(".KhamSucKhoe").hide();
         $(".KhamBHYT").hide();
     }
 
+    /*
+     * Khai bao nhung event danh cho controls, thuong la button on click va combobox on change
+     */
     page.defaults.initializeControlEvents = function () {
         $("#save").on("click", page.defaults.save);
         $("#reset").on("click", page.defaults.reset);
         $("#loaikham").on("change", page.sections.ThongTinBenhNhan.loaiKhamOnChange);
     };
 
-    function loadBreadcrumb() {
+    /* Lay du lieu tren url 
+     * VD: Modules/Pages/ThuPhi?UserId=1&Sex=0
+     *     => Ket qua lay ve se la: query.UserId = 1
+     *                              query.Sex = 0
+     */
+    page.defaults.getParameters = function () {
+        var query = App.utils.splitQuery(location.search);
+
+        //TO-DO: Set gia tri cua bien sau khi lay tu url vao page.values
+        page.values.no_seq = query.no_seq;
+    };
+
+    /*
+     * Load duong dan cu the cua trang de hien thi len man hinh.
+     */
+    page.defaults.initialize.loadBreadcrumb = function () {
         var element = $("ol.breadcrumb");
+
+        //TO-DO: Thay doi ten cua trang
         element.append("<li class='breadcrumb-item'><span class='fs1' aria-hidden='true' data-icon=''></span>General</li><li class='breadcrumb-item active'>Tiếp nhận</li>");
     }
 
+    /* Load du lieu khong thay doi trong trang
+     * VD: Danh muc tinh thanh, cong ty...
+      */
     page.defaults.loadMasterData = function () {
         $.ajax(App.ajax.webapi.get(page.options.urls.danhMuc.congTy)).then(function (result) {
             App.form.bindCombobox($.findP("NoiCongTac"), result);
@@ -100,6 +123,9 @@
         });
     }
 
+    /*
+     * Load du lieu dua theo parameters da lay tren url
+     */
     page.defaults.loadData = function () {
         $.ajax(App.ajax.webapi.get(page.options.urls.get)).then(function (result) {
             App.form.bindData(page.sections.ThongTinBenhNhan.element, result);
@@ -114,6 +140,11 @@
         element.validate(page.sections.frm.validationOptions);
     }
 
+    /*
+     * Set validations cho form, moi trang se co 1 form duy nhat
+     * Rules se dua vao name cua element
+     * VD: <input type="text" name="hoten" data-prop="HoTen"
+     */
     page.sections.frm.validationOptions = {
         rules: {
             hoten: "required",
@@ -123,6 +154,16 @@
         }
     };
 
+    page.sections.ThongTinBenhNhan.defaults.initialize = function () {
+        var element = $(".thong-tin-benh-nhan");
+
+        page.sections.ThongTinBenhNhan.element = element;
+
+    };
+
+    /*
+     * Khi nhan nut tren man hinh thi se co ham tuong ung
+     */
     page.defaults.save = function () {
         var element = page.sections.ThongTinBenhNhan.element,
             frmElement = page.sections.frm.element,

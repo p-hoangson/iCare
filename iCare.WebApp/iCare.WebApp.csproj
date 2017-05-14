@@ -6121,6 +6121,7 @@
     <Content Include="Modules\Share\wwwroot\Content\lobibox\lobibox.min.css" />
     <Content Include="Modules\Share\wwwroot\Scripts\app\app.notify.js" />
     <Content Include="Modules\Share\wwwroot\Scripts\app\app.ext.js" />
+    <Content Include="Modules\Share\wwwroot\Scripts\app\app.utils.js" />
     <Content Include="Modules\Share\wwwroot\Scripts\jquery-validation\additional-methods.js" />
     <Content Include="Modules\Share\wwwroot\Scripts\jquery-validation\additional-methods.min.js" />
     <Content Include="Modules\Share\wwwroot\Scripts\jquery-validation\jquery.validate.js" />

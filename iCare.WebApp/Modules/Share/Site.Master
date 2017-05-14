@@ -1313,6 +1313,7 @@
 
     <%-- App JS --%>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/Scripts/underscore/underscore-min.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/Scripts/app/app.utils.js") %>"></script>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/Scripts/app/app.ext.js") %>"></script>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/Scripts/app/app.form.js") %>"></script>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/Scripts/app/app.ajax.js") %>"></script>
