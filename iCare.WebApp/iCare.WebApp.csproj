@@ -133,6 +133,8 @@
     <Content Include="Modules\General\Pages\TiepNhan\TiepNhan.aspx" />
     <Content Include="Modules\General\Pages\TiepNhan\BaoHiemYTe.ascx" />
     <Content Include="Modules\Management\Pages\GoiKham.aspx" />
+    <Content Include="Modules\Menu\Pages\MenuItems\MenuItems.aspx" />
+    <Content Include="Modules\Menu\Pages\MenuItems\MenuItems.css" />
     <Content Include="Modules\Share\Pages\Login\Login.aspx" />
     <Content Include="Modules\Share\Pages\QuenMatKhau.aspx" />
     <Content Include="Modules\Share\wwwroot\Content\site.css" />
@@ -7261,6 +7263,13 @@
     <Compile Include="Modules\Management\Pages\GoiKham.aspx.designer.cs">
       <DependentUpon>GoiKham.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Menu\Pages\MenuItems\MenuItems.aspx.cs">
+      <DependentUpon>MenuItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Menu\Pages\MenuItems\MenuItems.aspx.designer.cs">
+      <DependentUpon>MenuItems.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Share\Api\DM_CongTyController.cs" />
     <Compile Include="Modules\Share\Api\DM_QuanHuyenController.cs" />
     <Compile Include="Modules\Share\Api\DM_TinhThanhController.cs" />
@@ -7315,6 +7324,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modules\General\Pages\Dashboard\" />
+    <Folder Include="Modules\Menu\Api\" />
     <Folder Include="Modules\Share\wwwroot\lib\backend\assets\global\css\components\" />
     <Folder Include="Modules\Share\wwwroot\lib\backend\assets\global\plugins\rich-filemanager\connectors\mvc\" />
     <Folder Include="Modules\Share\wwwroot\lib\backend\assets\layouts\global\" />

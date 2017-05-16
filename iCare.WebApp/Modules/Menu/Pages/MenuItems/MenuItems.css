@@ -1,0 +1,17 @@
+﻿.content{
+    min-height:300px;
+}
+
+.page-content-title
+{
+    font-weight:bold;
+}
+
+.menu-items li a {
+    font-size:16px;
+    color:#087380;
+}
+
+.menu-items li a:hover{
+    text-decoration:underline;
+}
