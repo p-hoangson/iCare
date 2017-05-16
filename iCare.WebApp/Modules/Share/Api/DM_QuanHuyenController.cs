@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace iCare.WebApp.Modules.Share.Api
+namespace iCare.WebApp.Modules.Share.Api     
 {
     public class DM_QuanHuyenController : ApiController
     {

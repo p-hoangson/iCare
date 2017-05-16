@@ -8,7 +8,7 @@ using System.Web.Http;
 
 namespace iCare.WebApp.Modules.General.Api
 {
-    public class TiepNhanController : ApiController
+    public class TiepNhanController : ApiController     
     {
         // GET api/<controller>/5
         public HttpResponseMessage Get()
