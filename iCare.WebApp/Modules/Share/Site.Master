@@ -57,7 +57,7 @@
             <div class="header-width">
                 <div class="col-xl-9">
                     <div class="logo float-xs-left">
-                        <a href="#">
+                        <a href="<%= ResolveUrl("~/Modules/Menu/Pages/MenuItems/MenuItems") %>">
                             <img src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/image/web-logo.png") %>" alt="logo"></a>
                     </div>
 
