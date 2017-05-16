@@ -7,7 +7,7 @@ using System.Data.Common;
 using System.Linq;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using System.Linq;
+//using System.Linq;
 using System.Data.Entity;
 
 namespace iCare.Arch.Base.Authentication

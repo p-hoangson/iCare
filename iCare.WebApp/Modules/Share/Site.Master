@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="description" content="bootstrap default admin template">
     <meta name="viewport" content="width=device-width">
-    <title><%= Page.Title %> | iCare</title>
+    <title><%= Page.Title %> | iCare</title>    
     <!-- Favicons -->
     <link rel="shortcut icon" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/favicon/favicon.ico") %>" type="image/x-icon" />
     <link rel="apple-touch-icon" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/favicon/apple-touch-icon.png") %>" />
