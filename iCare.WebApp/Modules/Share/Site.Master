@@ -25,6 +25,9 @@
     <link id="site-color" rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/layouts/layout-top-menu/css/color/light/color-default.min.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/switchery/dist/switchery.min.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/perfect-scrollbar/css/perfect-scrollbar.min.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/font-awesome/css/font-awesome.min.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/toastr/build/toastr.min.css") %>" />
+
     <!-- END GLOBAL CSS -->
 
     <!-- START PAGE PLUG-IN CSS -->
@@ -1286,6 +1289,7 @@
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/switchery/dist/switchery.min.js") %>"></script>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/screenfull.js/dist/screenfull.min.js") %>"></script>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/classie/classie.js") %>"></script>
+    <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/toastr/build/toastr.min.js") %>"></script>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/jquery-validation/dist/jquery.validate.min.js") %>"></script>
 
     <!-- END CORE JAVASCRIPT -->
