@@ -131,7 +131,7 @@
             App.form.bindData(page.sections.ThongTinBenhNhan.element, result);
         });
 
-        App.notify.success('Load data complete');
+        App.notify.success('Load data complete','Thông báo');
     }
 
     page.sections.frm.initialize = function () {
