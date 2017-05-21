@@ -150,6 +150,9 @@
                                         <label for="cb8"></label>
                                     </div>
                                 </td>
+
+
+
                                                                                           <td>
                                     <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
                                 </td>
