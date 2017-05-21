@@ -130,6 +130,10 @@
     <Content Include="Modules\General\Pages\TiepNhan\TiepNhan.js" />
     <Content Include="Modules\General\Pages\TiepNhan\TiepNhan.aspx" />
     <Content Include="Modules\General\Pages\TiepNhan\BaoHiemYTe.ascx" />
+    <Content Include="Modules\Laboratory\Pages\CapMa\CapMa.aspx" />
+    <Content Include="Modules\Laboratory\Pages\CapMa\CapMa.css" />
+    <Content Include="Modules\Laboratory\Pages\CapMa\CapMa.js" />
+    <Content Include="Modules\Laboratory\Pages\CapMa\DichVuXetNghiem.ascx" />
     <Content Include="Modules\Management\Pages\GoiKham.aspx" />
     <Content Include="Modules\Menu\Pages\MenuItems\MenuItems.aspx" />
     <Content Include="Modules\Menu\Pages\MenuItems\MenuItems.css" />
@@ -7091,6 +7095,7 @@
     <Content Include="Modules\Share\wwwroot\lib\backend\sass\pages\register\register-v1\css\register-v1.scss" />
     <Content Include="Modules\Share\wwwroot\lib\backend\sass\pages\register\register-v2\css\register_v2.scss" />
     <Content Include="Modules\Share\Site.Master" />
+    <Content Include="Modules\Laboratory\Pages\CapMa\dvxn.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -7254,6 +7259,20 @@
     <Compile Include="Modules\General\Pages\TiepNhan\BaoHiemYTe.ascx.designer.cs">
       <DependentUpon>BaoHiemYTe.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Laboratory\Pages\CapMa\CapMa.aspx.cs">
+      <DependentUpon>CapMa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\CapMa\CapMa.aspx.designer.cs">
+      <DependentUpon>CapMa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\CapMa\DichVuXetNghiem.ascx.cs">
+      <DependentUpon>DichVuXetNghiem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\CapMa\DichVuXetNghiem.ascx.designer.cs">
+      <DependentUpon>DichVuXetNghiem.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Management\Pages\GoiKham.aspx.cs">
       <DependentUpon>GoiKham.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7322,6 +7341,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Modules\General\Pages\Dashboard\" />
+    <Folder Include="Modules\Laboratory\Api\" />
+    <Folder Include="Modules\Laboratory\Data\" />
     <Folder Include="Modules\Menu\Api\" />
     <Folder Include="Modules\Share\wwwroot\lib\backend\assets\global\css\components\" />
     <Folder Include="Modules\Share\wwwroot\lib\backend\assets\global\plugins\rich-filemanager\connectors\mvc\" />

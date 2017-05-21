@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Bootstrap Multiselect (https://github.com/davidstutz/bootstrap-multiselect)
  * 
  * Apache License, Version 2.0:
@@ -326,10 +326,10 @@
             filterBehavior: 'text',
             includeFilterClearBtn: true,
             preventInputChangeEvent: false,
-            nonSelectedText: 'None selected',
-            nSelectedText: 'selected',
-            allSelectedText: 'All selected',
-            numberDisplayed: 3,
+            nonSelectedText: 'Chưa chọn',
+            nSelectedText: 'lựa chọn',
+            allSelectedText: 'Chọn tất cả',
+            numberDisplayed: 0,
             disableIfEmpty: false,
             delimiterText: ', ',
             templates: {

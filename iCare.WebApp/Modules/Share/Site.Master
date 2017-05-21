@@ -41,6 +41,10 @@
     <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/layouts/layout-top-menu/css/layout.min.css") %>" />
     <!-- END LAYOUT CSS -->
 
+    <!-- START LAYOUT CSS -->
+
+    <!-- END LAYOUT CSS -->
+    
     <asp:ContentPlaceHolder ID="StylesInclude" runat="server">
     </asp:ContentPlaceHolder>
 </head>
