@@ -9,7 +9,8 @@
             loadBreadcrumb: {},
             getParameters: {},
             loadMasterData: {},
-            loadData: {}
+            loadData: {},
+            loadDialogs: {}
         },
         options: {
             urls: {
@@ -38,7 +39,11 @@
             }
         },
         dialogs: {
-
+            BenhNhanCho: {
+                options: {
+                    url: ""
+                }
+            }
         }
     }
 
@@ -55,6 +60,7 @@
 
         //Tuy thuoc vao trang co bao nhieu sections thi se goi bay nhieu initialize cua sections do
         page.sections.ThongTinBenhNhan.defaults.initialize();
+        page.dialogs.BenhNhanCho.element = $("#benhNhanChoSelection");
 
         page.defaults.loadMasterData();
         page.defaults.loadData();
@@ -66,7 +72,7 @@
      */
     page.defaults.initializeControls = function () {
         page.defaults.initialize.loadBreadcrumb();
-
+        
         $(".KhamSucKhoe").hide();
         $(".KhamBHYT").hide();
     }
@@ -78,6 +84,7 @@
         $("#save").on("click", page.defaults.save);
         $("#reset").on("click", page.defaults.reset);
         $("#loaikham").on("change", page.sections.ThongTinBenhNhan.loaiKhamOnChange);
+        $(".benhnhancho").on("click", page.sections.ThongTinBenhNhan.showBenhNhanChoSelection);
     };
 
     /* Lay du lieu tren url 
@@ -200,6 +207,12 @@
             default:
                 break;
         }
+    }
+
+    page.sections.ThongTinBenhNhan.showBenhNhanChoSelection = function () {
+        var element = page.dialogs.BenhNhanCho.element;
+
+        element.modal("show");
     }
 
     $(document).ready(function () {

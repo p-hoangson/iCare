@@ -12,7 +12,7 @@ namespace iCare.WebApp.Modules.General.Api
     {
         // GET api/<controller>/5
         public HttpResponseMessage Get()
-        {
+        {   
             return Request.CreateResponse(HttpStatusCode.OK, new TiepNhanViewModel()
             {
                 HoTen = "Pham Hoang Son",

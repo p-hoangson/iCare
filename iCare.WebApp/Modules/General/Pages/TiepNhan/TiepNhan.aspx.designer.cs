@@ -29,5 +29,14 @@ namespace iCare.WebApp.Modules.General.Pages.TiepNhan {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::iCare.WebApp.Modules.General.Pages.TiepNhan.KhamSucKhoe KhamSucKhoe;
+        
+        /// <summary>
+        /// BenhNhanChoSelection control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::iCare.WebApp.Modules.General.Pages.BenhNhanChoSelection.BenhNhanChoSelection BenhNhanChoSelection;
     }
 }
