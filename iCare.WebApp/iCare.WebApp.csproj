@@ -125,6 +125,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Modules\General\Pages\BenhNhanChoSelection\BenhNhanChoSelection.ascx" />
+    <Content Include="Modules\General\Pages\BenhNhanChoSelection\BenhNhanChoSelection.js" />
     <Content Include="Modules\General\Pages\Dashboard.aspx" />
     <Content Include="Modules\General\Pages\TiepNhan\KhamSucKhoe.ascx" />
     <Content Include="Modules\General\Pages\TiepNhan\TiepNhan.css" />
@@ -140,6 +141,7 @@
     <Content Include="Modules\Menu\Pages\MenuItems\MenuItems.css" />
     <Content Include="Modules\Share\Pages\Login\Login.aspx" />
     <Content Include="Modules\Share\Pages\QuenMatKhau.aspx" />
+    <Content Include="Modules\Share\wwwroot\Content\default.css" />
     <Content Include="Modules\Share\wwwroot\Content\site.css" />
     <Content Include="Modules\Share\wwwroot\lib\backend\assets\data\ajaxtest.php" />
     <Content Include="Modules\Share\wwwroot\lib\backend\assets\data\ajax_demo.txt" />

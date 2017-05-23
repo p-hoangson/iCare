@@ -30,8 +30,8 @@
                     <!-- END BREADCRUMB -->
                 </div>
                 <!-- END PAGE TITLE -->
-                <div class="row commands" style="margin-right: 20px;">
-                    <div class="float-xs-right">
+                <div class="row screen-commands">
+                    <div class="commands float-xs-right">
                         <button class="btn btn-primary flat-buttons" type="button" id="save" name="action">
                             <span>TIẾP NHẬN</span>
                         </button>

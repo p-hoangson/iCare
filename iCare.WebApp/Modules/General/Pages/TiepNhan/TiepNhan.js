@@ -60,10 +60,10 @@
 
         //Tuy thuoc vao trang co bao nhieu sections thi se goi bay nhieu initialize cua sections do
         page.sections.ThongTinBenhNhan.defaults.initialize();
-        page.dialogs.BenhNhanCho.element = $("#benhNhanChoSelection");
 
         page.defaults.loadMasterData();
         page.defaults.loadData();
+        page.defaults.loadDialogs();
     }
 
     /*
@@ -72,7 +72,7 @@
      */
     page.defaults.initializeControls = function () {
         page.defaults.initialize.loadBreadcrumb();
-        
+
         $(".KhamSucKhoe").hide();
         $(".KhamBHYT").hide();
     }
@@ -128,7 +128,7 @@
         $.ajax(App.ajax.webapi.get(page.options.urls.danhMuc.xaPhuong)).then(function (result) {
             App.form.bindCombobox($.findP("XaPhuong"), result);
         });
-    }
+    };
 
     /*
      * Load du lieu dua theo parameters da lay tren url
@@ -138,8 +138,15 @@
             App.form.bindData(page.sections.ThongTinBenhNhan.element, result);
         });
 
-        App.notify.success('Load data complete','Thông báo');
-    }
+        App.notify.success('Load data complete');
+    };
+
+    page.defaults.loadDialogs = function () {        
+        page.dialogs.BenhNhanCho.dialog = window.benhNhanChoSelection;
+        page.dialogs.BenhNhanCho.dialog.defaults.initialize();
+        page.dialogs.BenhNhanCho.element = page.dialogs.BenhNhanCho.dialog.element;
+        page.dialogs.BenhNhanCho.dialog.defaults.onSelected = page.sections.ThongTinBenhNhan.benhNhanChoSelected;
+    };
 
     page.sections.frm.initialize = function () {
         var element = page.sections.frm.element;
@@ -214,6 +221,10 @@
 
         element.modal("show");
     }
+
+    page.sections.ThongTinBenhNhan.benhNhanChoSelected = function (valuesSelected) {
+        console.log(valuesSelected);
+    };
 
     $(document).ready(function () {
         page.defaults.initialize();
