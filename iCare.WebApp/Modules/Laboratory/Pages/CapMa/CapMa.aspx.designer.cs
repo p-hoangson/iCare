@@ -20,5 +20,23 @@ namespace iCare.WebApp.Modules.Laboratory.Pages.CapMa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::iCare.WebApp.Modules.Laboratory.Pages.CapMa.DichVuXetNghiem DichVuXetNghiem;
+        
+        /// <summary>
+        /// DSBNCho control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::iCare.WebApp.Modules.Laboratory.Pages.CapMa.DSBNCho DSBNCho;
+        
+        /// <summary>
+        /// DSBNDaCapMa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::iCare.WebApp.Modules.Laboratory.Pages.CapMa.DSBNDaCapMa DSBNDaCapMa;
     }
 }

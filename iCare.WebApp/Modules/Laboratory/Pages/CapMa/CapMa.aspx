@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Modules/Share/Site.Master" AutoEventWireup="true" CodeBehind="CapMa.aspx.cs" Inherits="iCare.WebApp.Modules.Laboratory.Pages.CapMa.CapMa" %>
 
 <%@ Register Src="~/Modules/Laboratory/Pages/CapMa/DichVuXetNghiem.ascx" TagPrefix="uc1" TagName="DichVuXetNghiem" %>
+<%@ Register Src="~/Modules/Laboratory/Pages/CapMa/DSBNCho.ascx" TagPrefix="uc1" TagName="DSBNCho" %>
+<%@ Register Src="~/Modules/Laboratory/Pages/CapMa/DSBNDaCapMa.ascx" TagPrefix="uc1" TagName="DSBNDaCapMa" %>
+
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="StylesInclude" runat="server">
 
@@ -11,6 +15,7 @@
     <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/bootstrap-multiselect/dist/css/bootstrap-multiselect.min.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/bootstrap-table/dist/bootstrap-table.min.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/hover/css/hover.min.css") %>" />
+    <%--<link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/Waves/dist/waves.min.css") %>" />--%>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -109,39 +114,42 @@
                                 <div class="thong-tin-benh-nhan heading-card">
                                     <h4 class="page-content-title">THÔNG TIN BỆNH NHÂN</h4>
                                     <div class="row">
-                                        <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="user-name-profile col-lg-8 col-xl-8 col-md-12 col-sm-12 col-xs-12">
                                             <label>Họ tên</label>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" name="hoten" data-prop="HoTen">
+                                                <input class="form-control" type="text" name="hoten" data-prop="HoTen" value="Nguyễn Văn A">
+                                                <%--<div class="detail-profile">Nguyễn Văn A</div>  <%--float-xs-right--%>
                                             </div>
                                         </div>
                                         <div class="col-lg-2 col-xl-2 col-md-12 col-sm-12 col-xs-12">
                                             <label></label>
                                             <div class="form-group">
-                                                <button type="button" class="btn btn-info flat-buttons waves-effect waves-buttono">BỆNH NHÂN CHỜ</button>
+                                                <button type="button" class="btn btn-info flat-buttons waves-effect waves-buttono" data-toggle="modal" data-target="#largemodalDSBNCH">BỆNH NHÂN CHỜ</button>
                                             </div>
 
                                         </div>
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="user-name-profile col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
                                             <label for="dienthoai">Mã bệnh nhân</label>
                                             <div class="form-group">
-                                                <input class="form-control" id="mabn" type="text" data-prop="MaBenhNhan" />
+                                                <input class="form-control" id="mabn" type="text" data-prop="MaBenhNhan"  value="17050001"/>
+                                                <%--<div class="detail-profile">17050001</div>--%>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="user-name-profile col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
                                             <label for="dienthoai">Số CMND</label>
                                             <div class="form-group">
-                                                <input class="form-control" id="maba" type="text" data-prop="SoCMND" />
+                                                <input class="form-control" id="maba" type="text" data-prop="SoCMND" value="241078333"/>
+                                                <%--<div class="detail-profile">Đỗ Văn A</div>--%>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
                                             <label></label>
                                             <div class="form-group">
-                                                <button type="button" class="btn btn-warning flat-buttons waves-effect waves-button">BỆNH NHÂN CẤP MÃ</button>
+                                                <button type="button" class="btn btn-warning flat-buttons waves-effect waves-button" data-toggle="modal" data-target="#largemodalDSBNCM">BỆNH NHÂN CẤP MÃ</button>
                                             </div>
 
                                         </div>
@@ -149,16 +157,18 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-xs-6">
+                                        <div class="user-name-profile col-xs-6">
                                             <label>Ngày sinh</label>
                                             <div class="form-group">
-                                                <input class="form-control" data-validation="birthdate" placeholder="dd/mm/yyyy" data-prop="Birthday">
+                                                <input class="form-control" data-validation="birthdate" placeholder="dd/mm/yyyy" data-prop="Birthday" value="06/04/1989"/>
+                                                <%--<div class="detail-profile">06/04/1989</div>--%>
                                             </div>
                                         </div>
-                                        <div class="col-xs-2">
+                                        <div class="user-name-profile col-xs-2">
                                             <label>Tuổi</label>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" readonly="readonly">
+                                                <input class="form-control" type="text" readonly="readonly" value="28"/>
+                                                <%--<div class="detail-profile">28</div>--%>
                                             </div>
                                         </div>
                                         <div class="col-xs-4">
@@ -179,74 +189,84 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-4">
+                                        <div class="user-name-profile col-xs-4">
                                             <label for="ngaychidinh">Ngày chỉ định</label>
 
-                                            <input class="form-control" type="text" id="ngaychidinh" data-prop="NgayChiDinh" value="" />
+                                            <input class="form-control" type="text" id="ngaychidinh" data-prop="NgayChiDinh" value="20/05/2017" />
+                                            <%--<div class="detail-profile">20/05/2017</div>--%>
 
                                         </div>
-                                        <div class="col-xs-8">
+                                        <div class="user-name-profile col-xs-8">
                                             <label for="nguoichidinh">Người chỉ định</label>
                                             <input class="form-control" type="text" id="nguoichidinh" data-prop="NguoiChiDinh" value="BS Nguyễn Văn A" />
+                                            <%--<div class="detail-profile">Nguyễn Văn A</div>--%>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-6">
+                                        <div class="user-name-profile col-xs-6">
                                             <label for="noichidinh">Nơi chỉ định</label>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" id="noichidinh" data-prop="NoiChiDinh"  value=""/>
+                                                <input class="form-control" type="text" id="noichidinh" data-prop="NoiChiDinh"  value="Khoa hồi sức chống độc"/>
+                                                <%--<div class="detail-profile">Khoa hồi sức chống độc</div>--%>
                                             </div>
                                          </div>
-                                         <div class="col-xs-6">
+                                         <div class="user-name-profile col-xs-6">
                                             <label for="doituong">Đối tượng</label>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" id="doituong" data-prop="DoiTuong" />
+                                                <input class="form-control" type="text" id="doituong" data-prop="DoiTuong" value="Thu phí"/>
+                                                <%--<div class="detail-profile">Thu phí</div>--%>
                                             </div>
                                          </div>
 
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-12">
+                                        <div class="user-name-profile col-xs-12">
                                             <label for="diachi">Địa chỉ</label>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" id="diachi" data-prop="DiaChi" />
+                                                <input class="form-control" type="text" id="diachi" data-prop="diachi" value="120 - Tôn Thất Thuyết - Quận 4 - TPHCM"/>
+                                                <%--<div class="detail-profile">120 - tôn thất thuyết - quận 4 - tphcm</div>--%>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-12">
+                                        <div class="user-name-profile col-xs-12">
                                             <label for="chandoan">Chẩn đoán</label>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" id="chandoan" data-prop="ChanDoan" />
+                                                <input class="form-control" type="text" id="chandoan" data-prop="ChanDoan" value="Loét hoành tá tràng;"/>
+                                                <%--<div class="detail-profile">Loét hành tá tràng</div>--%>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                         <div class="col-xs-6">
+                                         <div class="user-name-profile col-xs-6">
                                             <label for="mabp">Mã BP</label>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" id="mabp" data-prop="MaBP" />
+                                                <input class="form-control" type="text" id="mabp" data-prop="MaBP" value=""/>
+                                                <%--<div class="detail-profile">&nbsp;</div>--%>
                                             </div>
                                          </div>
-                                         <div class="col-xs-6">
+                                         <div class="user-name-profile col-xs-6">
                                             <label for="noilaymau">Nơi lấy mẫu</label>
                                             <div class="form-group">
                                                 <input class="form-control" type="text" id="noilaymau" data-prop="NoiLayMau" value="Phòng xét nghiệm"/>
+                                                <%--<div class="detail-profile">Phòng xét nghiệm</div>--%>
                                             </div>
                                          </div>
                                     </div>
 
                                      <div class="row">
-                                         <div class="col-xs-6">
+                                         <div class="user-name-profile col-xs-6">
                                             <label for="nguoicapma">Người cấp mã</label>
                                             <div class="form-group">
-                                                <input class="form-control" type="text" id="nguoicapma" data-prop="MaBP" />
+                                                <input class="form-control" type="text" id="nguoicapma" data-prop="MaBP" value="Nguyễn Văn B"/>
+                                                <%--<div class="detail-profile">Nguyễn Văn B</div>--%>
                                             </div>
                                          </div>
-                                         <div class="col-xs-6">
+                                         <div class="user-name-profile col-xs-6">
                                             <label for="tgcapma">Thời gian cấp mã</label>
                                             <div class="form-group">
                                                 <input class="form-control" type="text" id="tgcapma" data-prop="TGCapMa" value="20/05/2017 12:00:00"/>
+                                                <%--<div class="detail-profile">20/05/2017 12:00:00</div>--%>
                                             </div>
                                          </div>
                                     </div>
@@ -278,6 +298,52 @@
             </section>
         </div>
     </section>
+
+
+
+<div class="modal fade bd-example-modal-lg" id="largemodalDSBNCH" tabindex="-1" role="dialog" aria-labelledby="largemodal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">DANH SÁCH BỆNH NHÂN CHỜ</h4>
+            </div>
+            <div class="modal-body">
+                <uc1:DSBNCho runat="server" id="DSBNCho" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary flat-buttons" data-dismiss="modal">Đóng</button>
+                <%--<button type="button" class="btn btn-primary flat-buttons">Save changes</button>--%>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade bd-example-modal-lg" id="largemodalDSBNCM" tabindex="-1" role="dialog" aria-labelledby="largemodal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">DANH SÁCH BỆNH NHÂN ĐÃ CẤP MÃ</h4>
+            </div>
+            <div class="modal-body">
+                <uc1:DSBNDaCapMa runat="server" ID="DSBNDaCapMa" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary flat-buttons" data-dismiss="modal">Đóng</button>
+                <%--<button type="button" class="btn btn-primary flat-buttons">Save changes</button>--%>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentScripts" runat="server">
     <script src="<%= ResolveUrl("~/Modules/Laboratory/Pages/CapMa/CapMa.js") %>" type="text/javascript"></script>

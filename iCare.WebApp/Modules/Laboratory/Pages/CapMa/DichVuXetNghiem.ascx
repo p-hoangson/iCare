@@ -46,12 +46,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb1" name="checkbox" type="checkbox" />
+                                        <input id="cb1" name="checkbox" type="checkbox" disabled/>
                                         <label for="cb1"></label>
                                     </div>
                                 </td>
                                 <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
 
@@ -61,12 +61,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb2" name="checkbox" type="checkbox" />
+                                        <input id="cb2" name="checkbox" type="checkbox" checked/>
                                         <label for="cb2"></label>
                                     </div>
                                 </td>
                                                               <td>
-                                   <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                   <span style="width:20px;font-size:14pt;color:lightsteelblue;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
 
@@ -76,12 +76,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb3" name="checkbox" type="checkbox" />
+                                        <input id="cb3" name="checkbox" type="checkbox" checked />
                                         <label for="cb3"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -90,12 +90,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb4" name="checkbox" type="checkbox" />
+                                        <input id="cb4" name="checkbox" type="checkbox" checked />
                                         <label for="cb4"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -104,12 +104,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb5" name="checkbox" type="checkbox" />
+                                        <input id="cb5" name="checkbox" type="checkbox" checked />
                                         <label for="cb5"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -118,12 +118,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb6" name="checkbox" type="checkbox" />
+                                        <input id="cb6" name="checkbox" type="checkbox"  checked />
                                         <label for="cb6"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -132,12 +132,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb7" name="checkbox" type="checkbox" />
+                                        <input id="cb7" name="checkbox" type="checkbox" checked />
                                         <label for="cb7"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -146,7 +146,7 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb8" name="checkbox" type="checkbox" />
+                                        <input id="cb8" name="checkbox" type="checkbox" checked />
                                         <label for="cb8"></label>
                                     </div>
                                 </td>
@@ -154,7 +154,7 @@
 
 
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -163,12 +163,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb9" name="checkbox" type="checkbox" />
+                                        <input id="cb9" name="checkbox" type="checkbox" checked />
                                         <label for="cb9"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -177,12 +177,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb10" name="checkbox" type="checkbox" />
+                                        <input id="cb10" name="checkbox" type="checkbox" checked />
                                         <label for="cb10"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                   <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                   <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -191,12 +191,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb11" name="checkbox" type="checkbox" />
+                                        <input id="cb11" name="checkbox" type="checkbox" checked />
                                         <label for="cb11"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -205,12 +205,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb12" name="checkbox" type="checkbox" />
+                                        <input id="cb12" name="checkbox" type="checkbox" checked />
                                         <label for="cb12"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -219,12 +219,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb13" name="checkbox" type="checkbox" />
+                                        <input id="cb13" name="checkbox" type="checkbox" checked />
                                         <label for="cb13"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -233,12 +233,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb14" name="checkbox" type="checkbox" />
+                                        <input id="cb14" name="checkbox" type="checkbox" checked/>
                                         <label for="cb14"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -247,12 +247,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb15" name="checkbox" type="checkbox" />
+                                        <input id="cb15" name="checkbox" type="checkbox" checked />
                                         <label for="cb15"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
                                                         <tr>
@@ -261,12 +261,12 @@
                                 <td>1</td>
                                 <td>
                                     <div class="site-checkbox">
-                                        <input id="cb16" name="checkbox" type="checkbox" />
+                                        <input id="cb16" name="checkbox" type="checkbox" checked />
                                         <label for="cb16"></label>
                                     </div>
                                 </td>
                                                                                           <td>
-                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon icon_trash"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:red;vertical-align:middle;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
                                 </td>
                             </tr>
  

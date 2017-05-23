@@ -6,7 +6,7 @@
     }
 
     .tblScroll {
-        height: 300px;
+        height: 400px;
         overflow: auto;
         margin-top: 20px;
     }
