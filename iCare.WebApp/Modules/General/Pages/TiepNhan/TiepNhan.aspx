@@ -4,6 +4,8 @@
 
 <%@ Register TagPrefix="userControl" TagName="BaoHiemYTe" Src="~/Modules/General/Pages/TiepNhan/BaoHiemYTe.ascx" %>
 <%@ Register TagPrefix="userControl" TagName="KhamSucKhoe" Src="~/Modules/General/Pages/TiepNhan/KhamSucKhoe.ascx" %>
+<%@ Register TagPrefix="userControl" TagName="BenhNhanChoSelection" Src="~/Modules/General/Pages/BenhNhanChoSelection/BenhNhanChoSelection.ascx" %>
+
 
 <asp:Content ID="StylesInclude" ContentPlaceHolderID="StylesInclude" runat="server">
     <link rel="stylesheet" type="text/css" href="<%= ResolveUrl("~/Modules/General/Pages/TiepNhan/TiepNhan.css") %>" />
@@ -28,8 +30,8 @@
                     <!-- END BREADCRUMB -->
                 </div>
                 <!-- END PAGE TITLE -->
-                <div class="row commands" style="margin-right: 20px;">
-                    <div class="float-xs-right">
+                <div class="row screen-commands">
+                    <div class="commands float-xs-right">
                         <button class="btn btn-primary flat-buttons" type="button" id="save" name="action">
                             <span>TIẾP NHẬN</span>
                         </button>
@@ -56,7 +58,7 @@
                                         <div class="col-lg-2 col-xl-2 col-md-12 col-sm-12 col-xs-12">
                                             <label></label>
                                             <div class="form-group">
-                                                <button type="button" class="btn btn-sm btn-info">BỆNH NHÂN CHỜ</button>
+                                                <button type="button" class="btn btn-sm btn-info benhnhancho">BỆNH NHÂN CHỜ</button>
                                             </div>
 
                                         </div>
@@ -216,6 +218,7 @@
         <!-- END PAGE CONTENT -->
     </section>
     <!-- END RIGHT CONTENT -->
+    <userControl:BenhNhanChoSelection ID="BenhNhanChoSelection" runat="server"></userControl:BenhNhanChoSelection>
 </asp:Content>
 <asp:Content ID="ContentScripts" ContentPlaceHolderID="ContentScripts" runat="server">
     <script src="<%= ResolveUrl("~/Modules/General/Pages/TiepNhan/TiepNhan.js") %>" type="text/javascript"></script>
