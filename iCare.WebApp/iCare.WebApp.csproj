@@ -138,6 +138,7 @@
     <Content Include="Modules\Laboratory\Pages\CapMa\DichVuXetNghiem.ascx" />
     <Content Include="Modules\Laboratory\Pages\CapMa\DSBNCho.ascx" />
     <Content Include="Modules\Laboratory\Pages\CapMa\DSBNDaCapMa.ascx" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\TraKetQuaXetNghiem.aspx" />
     <Content Include="Modules\Management\Pages\GoiKham.aspx" />
     <Content Include="Modules\Menu\Pages\MenuItems\MenuItems.aspx" />
     <Content Include="Modules\Menu\Pages\MenuItems\MenuItems.css" />
@@ -7298,6 +7299,13 @@
     </Compile>
     <Compile Include="Modules\Laboratory\Pages\CapMa\DSBNDaCapMa.ascx.designer.cs">
       <DependentUpon>DSBNDaCapMa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\TraKetQuaXetNghiem.aspx.cs">
+      <DependentUpon>TraKetQuaXetNghiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\TraKetQuaXetNghiem.aspx.designer.cs">
+      <DependentUpon>TraKetQuaXetNghiem.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modules\Management\Pages\GoiKham.aspx.cs">
       <DependentUpon>GoiKham.aspx</DependentUpon>
