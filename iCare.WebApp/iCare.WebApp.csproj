@@ -138,7 +138,16 @@
     <Content Include="Modules\Laboratory\Pages\CapMa\DichVuXetNghiem.ascx" />
     <Content Include="Modules\Laboratory\Pages\CapMa\DSBNCho.ascx" />
     <Content Include="Modules\Laboratory\Pages\CapMa\DSBNDaCapMa.ascx" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaViSinh\DSBNChoNhapKQ.ascx" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaViSinh\KQSoiCay.ascx" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaViSinh\TraKetQuaViSinh.aspx" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaViSinh\TraKetQuaViSinh.css" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaViSinh\TraKetQuaViSinh.js" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\DSBNChoNhapKQ.ascx" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\KQXetNghiem.ascx" />
     <Content Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\TraKetQuaXetNghiem.aspx" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\TraKetQuaXetNghiem.css" />
+    <Content Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\TraKetQuaXetNghiem.js" />
     <Content Include="Modules\Management\Pages\GoiKham.aspx" />
     <Content Include="Modules\Menu\Pages\MenuItems\MenuItems.aspx" />
     <Content Include="Modules\Menu\Pages\MenuItems\MenuItems.css" />
@@ -7299,6 +7308,41 @@
     </Compile>
     <Compile Include="Modules\Laboratory\Pages\CapMa\DSBNDaCapMa.ascx.designer.cs">
       <DependentUpon>DSBNDaCapMa.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaViSinh\DSBNChoNhapKQ.ascx.cs">
+      <DependentUpon>DSBNChoNhapKQ.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaViSinh\DSBNChoNhapKQ.ascx.designer.cs">
+      <DependentUpon>DSBNChoNhapKQ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaViSinh\KQSoiCay.ascx.cs">
+      <DependentUpon>KQSoiCay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaViSinh\KQSoiCay.ascx.designer.cs">
+      <DependentUpon>KQSoiCay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaViSinh\TraKetQuaViSinh.aspx.cs">
+      <DependentUpon>TraKetQuaViSinh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaViSinh\TraKetQuaViSinh.aspx.designer.cs">
+      <DependentUpon>TraKetQuaViSinh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\DSBNChoNhapKQ.ascx.cs">
+      <DependentUpon>DSBNChoNhapKQ.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\DSBNChoNhapKQ.ascx.designer.cs">
+      <DependentUpon>DSBNChoNhapKQ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\KQXetNghiem.ascx.cs">
+      <DependentUpon>KQXetNghiem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\KQXetNghiem.ascx.designer.cs">
+      <DependentUpon>KQXetNghiem.ascx</DependentUpon>
     </Compile>
     <Compile Include="Modules\Laboratory\Pages\TraKetQuaXetNhiem\TraKetQuaXetNghiem.aspx.cs">
       <DependentUpon>TraKetQuaXetNghiem.aspx</DependentUpon>

@@ -1,44 +1,43 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Modules/Share/Site.Master" AutoEventWireup="true" CodeBehind="TraKetQuaXetNghiem.aspx.cs" Inherits="iCare.WebApp.Modules.Laboratory.Pages.TraKetQuaXetNhiem.TraKetQuaXetNghiem" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Modules/Share/Site.Master" AutoEventWireup="true" CodeBehind="TraKetQuaViSinh.aspx.cs" Inherits="iCare.WebApp.Modules.Laboratory.Pages.TraKetQuaViSinh.TraKetQuaViSinh" %>
 
-<%@ Register Src="~/Modules/Laboratory/Pages/TraKetQuaXetNhiem/DSBNChoNhapKQ.ascx" TagPrefix="uc1" TagName="DSBNChoNhapKQ" %>
-<%@ Register Src="~/Modules/Laboratory/Pages/TraKetQuaXetNhiem/KQXetNghiem.ascx" TagPrefix="uc1" TagName="KQXetNghiem" %>
+<%@ Register Src="~/Modules/Laboratory/Pages/TraKetQuaViSinh/DSBNChoNhapKQ.ascx" TagPrefix="uc1" TagName="DSBNChoNhapKQ" %>
+<%@ Register Src="~/Modules/Laboratory/Pages/TraKetQuaViSinh/KQSoiCay.ascx" TagPrefix="uc1" TagName="KQSoiCay" %>
+
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="StylesInclude" runat="server">
-
-   
+       
     <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/css/global/dropdown-custom.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/jquery-nice-select/css/style.min.css") %>" />
     <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/bootstrap-multiselect/dist/css/bootstrap-multiselect.min.css") %>" />
 
    <%-- <link rel="stylesheet" href="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/layouts/layout-top-menu/css/layout.min.css") %>" />--%>
 
-<style type="text/css">
-    .table-responsive {
-        position: relative;
-    }
+    <style type="text/css">
+        .table-responsive {
+            position: relative;
+        }
 
-    .tblScroll {
-        height: 300px;
-        overflow: auto;
-        margin-top: 10px;
-    }
+        .tblScroll {
+            height: 300px;
+            overflow: auto;
+            margin-top: 20px;
+        }
 
-    .table-responsive table {
-        width: 100%;
-    }
+        .table-responsive table {
+            width: 100%;
+        }
 
-    .table-responsive table thead th .text {
-        position: absolute;
-        top: -20px;
-        z-index: 2;
-    }
-</style>
-
-
+        .table-responsive table thead th .text {
+            position: absolute;
+            top: -20px;
+            z-index: 2;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <section id="main" class="container-fluid">
+
+        <section id="main" class="container-fluid">
         <div class="row">
             <section id="content-wrapper">
                   <!-- START PAGE TITLE -->
@@ -473,19 +472,9 @@
                             <div class="row">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
+                             
 
-
-
-
-
-                                    <uc1:KQXetNghiem runat="server" id="KQXetNghiem" />
-
-
-
-
-
-
-
+                                    <uc1:KQSoiCay runat="server" id="KQSoiCay" />
 
 
 
@@ -529,7 +518,8 @@
                 <h4 class="modal-title">DANH SÁCH BỆNH NHÂN CHỜ NHẬP KẾT QUẢ</h4>
             </div>
             <div class="modal-body">
-                <uc1:DSBNChoNhapKQ runat="server" id="DSBNChoNhapKQ" />
+                <uc1:DSBNChoNhapKQ runat="server" ID="DSBNChoNhapKQ" />
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary flat-buttons" data-dismiss="modal">Đóng</button>
@@ -544,12 +534,9 @@
 
 
 
-
-
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentScripts" runat="server">
-    <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/jquery-nice-select/js/jquery.nice-select.min.js") %>"></script>
+        <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/jquery-nice-select/js/jquery.nice-select.min.js") %>"></script>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js") %>"></script>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/js/global/dropdown.min.js") %>"></script>
     <script type="text/javascript" src="<%= ResolveUrl("~/Modules/Share/wwwroot/lib/backend/assets/global/plugins/jquery-nice-select/js/fastclick.js") %>"></script>

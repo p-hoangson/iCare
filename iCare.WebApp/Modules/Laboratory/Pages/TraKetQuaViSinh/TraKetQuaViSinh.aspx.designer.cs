@@ -7,19 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace iCare.WebApp.Modules.Laboratory.Pages.TraKetQuaXetNhiem {
+namespace iCare.WebApp.Modules.Laboratory.Pages.TraKetQuaViSinh {
     
     
-    public partial class TraKetQuaXetNghiem {
+    public partial class TraKetQuaViSinh {
         
         /// <summary>
-        /// KQXetNghiem control.
+        /// KQSoiCay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::iCare.WebApp.Modules.Laboratory.Pages.TraKetQuaXetNhiem.KQXetNghiem KQXetNghiem;
+        protected global::iCare.WebApp.Modules.Laboratory.Pages.TraKetQuaViSinh.KQSoiCay KQSoiCay;
         
         /// <summary>
         /// DSBNChoNhapKQ control.

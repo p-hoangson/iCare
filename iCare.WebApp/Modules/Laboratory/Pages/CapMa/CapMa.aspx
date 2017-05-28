@@ -315,7 +315,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary flat-buttons" data-dismiss="modal">Đóng</button>
-                <%--<button type="button" class="btn btn-primary flat-buttons">Save changes</button>--%>
+               
             </div>
         </div>
     </div>
