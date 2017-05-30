@@ -2,6 +2,8 @@
 
 <%@ Register Src="~/Modules/Laboratory/Pages/TraKetQuaViSinh/DSBNChoNhapKQ.ascx" TagPrefix="uc1" TagName="DSBNChoNhapKQ" %>
 <%@ Register Src="~/Modules/Laboratory/Pages/TraKetQuaViSinh/KQSoiCay.ascx" TagPrefix="uc1" TagName="KQSoiCay" %>
+<%@ Register Src="~/Modules/Laboratory/Pages/TraKetQuaViSinh/KQKhangSinh.ascx" TagPrefix="uc1" TagName="KQKhangSinh" %>
+
 
 
 
@@ -19,7 +21,7 @@
         }
 
         .tblScroll {
-            height: 300px;
+           
             overflow: auto;
             margin-top: 20px;
         }
@@ -470,7 +472,7 @@
              
                         <div class="content">
                             <div class="row">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                
 
                              
 
@@ -480,7 +482,7 @@
 
 
 
-                              </div>
+                              <%--</div>--%>
                          </div>
                     </div>
 
@@ -489,10 +491,18 @@
 
 
 
+                <div class="content-dropdown">
+
+                    <div class="content">
+
+                          <div class="row">
+
+                              <uc1:KQKhangSinh runat="server" id="KQKhangSinh" />
 
 
-
-
+                            </div>
+                     </div>
+                </div>
 
                 </form>
 

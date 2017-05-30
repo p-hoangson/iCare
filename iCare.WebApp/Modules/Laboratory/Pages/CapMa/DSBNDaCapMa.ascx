@@ -236,7 +236,7 @@
                             </tr>
                                                         <tr>
                                                                 <td>
-                                    <span style="width:20px;font-size:14pt;color:dodgerblue;vertical-align:middle;text-align:center;" class="basic_table_icon"><i class="icon fa fa-trash-o"></i></span>
+                                    <span style="width:20px;font-size:14pt;color:dodgerblue;vertical-align:middle;text-align:center;" class="basic_table_icon"><i class="icon fa fa-hand-o-right"></i></span>
                                 </td>
                                 <td>9</td>
                                 <td>CD170520009</td>

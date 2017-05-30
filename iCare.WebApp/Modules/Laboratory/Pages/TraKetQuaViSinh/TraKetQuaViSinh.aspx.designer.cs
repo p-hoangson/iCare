@@ -22,6 +22,15 @@ namespace iCare.WebApp.Modules.Laboratory.Pages.TraKetQuaViSinh {
         protected global::iCare.WebApp.Modules.Laboratory.Pages.TraKetQuaViSinh.KQSoiCay KQSoiCay;
         
         /// <summary>
+        /// KQKhangSinh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::iCare.WebApp.Modules.Laboratory.Pages.TraKetQuaViSinh.KQKhangSinh KQKhangSinh;
+        
+        /// <summary>
         /// DSBNChoNhapKQ control.
         /// </summary>
         /// <remarks>
